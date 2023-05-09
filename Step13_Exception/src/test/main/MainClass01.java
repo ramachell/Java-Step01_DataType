@@ -9,7 +9,7 @@ public class MainClass01 {
 		// 숫자 형식의 문자열을 입력받는다 ex "10.1", "10" 등등
 		String inputNum = scan.nextLine();
 
-		// try catch 를 통해서 예외 발생해도 그뒤를 진행시킬수있음
+		// try catch 를 통해서 예외 발생 처리 가능
 		try {
 			// 입력한 문자열을 숫자로 바꾼다
 			double num = Double.parseDouble(inputNum);
@@ -18,7 +18,7 @@ public class MainClass01 {
 			System.out.println("입력한 숫자 + 100 = " + result);
 
 		} catch (NumberFormatException nfe) {
-//			nfe.printStackTrace();
+			nfe.printStackTrace();
 		}
 		// 여기서부터 다시 진행
 		System.out.println("뭔가 하고 main 메소드가 종료 됩니다!");
